@@ -4,19 +4,22 @@ body {
   margin: none;
 }
 
-.slider-container {
+.frame {
   background-color: blue;
   width: 500px;
   height: 300px;
   margin: auto;
-  display: flex;
   position: relative;
+  border: 5px solid rgba(0, 217, 255, 0.623);
+}
+
+.images-container {
+  width: 200rem;
 }
 
 img {
   width: 500px;
   height: 300px;
-  display: none;
 }
 
 .left,
