@@ -89,3 +89,8 @@ img {
   cursor: pointer;
   background: rgba(128, 128, 128, 0.5);
 }
+
+.dot:hover {
+  cursor: pointer;
+  background-color: rgb(153, 153, 153);
+}
