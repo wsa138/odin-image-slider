@@ -64,3 +64,5 @@ dots.forEach((dot) => {
     images[index].classList.add('framed');
   });
 });
+
+setInterval(shiftRight, 5000);
