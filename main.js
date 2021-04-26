@@ -32,6 +32,7 @@ const shiftLeft = () => {
   }
 };
 
+// Find currently framed image and shift to right by one.
 const shiftRight = () => {
   const oldIndex = removeFramed('framed', images);
   let newIndex;
@@ -52,4 +53,14 @@ right.addEventListener('click', () => {
 
 left.addEventListener('click', () => {
   shiftLeft();
+});
+
+// Add event listener on each dot to change to image based on index.
+dots.forEach((dot) => {
+  dot.addEventListener('click', () => {
+    removeFramed();
+    dot.classList.add('highlight');
+    const index = dots.indexOf(dot);
+    images[index].classList.add('framed');
+  });
 });
